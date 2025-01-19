@@ -1,0 +1,741 @@
+CRITICAL - 2025-01-18 16:42:25 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$dato->id_art"
+[Method: GET, Route: obtenerArtista/$dato-%3Eid_art]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('obtenerArtista/$dato->id_art')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('obtenerArtista/$dato->id_art')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:43:13 --> Error: Undefined constant "id_art"
+[Method: GET, Route: /]
+in APPPATH\Views\listado.php on line 76.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('listado', [], true)
+ 4 APPPATH\Controllers\CrudArtista.php(22): view('listado', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:43:17 --> Error: Undefined constant "id_art"
+[Method: GET, Route: /]
+in APPPATH\Views\listado.php on line 76.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('listado', [], true)
+ 4 APPPATH\Controllers\CrudArtista.php(22): view('listado', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:44:13 --> ErrorException: Attempt to read property "id_art" on array
+[Method: GET, Route: /]
+in APPPATH\Views\listado.php on line 76.
+ 1 APPPATH\Views\listado.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_art" on array', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\listado.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\listado.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('listado', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(22): view('listado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:45:50 --> TypeError: App\Controllers\CrudArtista::obtenerArtista(): Return value must be of type string, none returned
+[Method: GET, Route: obtenerArtista/1]
+in APPPATH\Controllers\CrudArtista.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:52:49 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: obtenerArtista/1]
+in APPPATH\Views\actualizar.php on line 17.
+ 1 APPPATH\Views\actualizar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(58): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:55:59 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: obtenerArtista/1]
+in APPPATH\Views\actualizar.php on line 17.
+ 1 APPPATH\Views\actualizar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(58): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 16:56:39 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: obtenerArtista/1]
+in APPPATH\Views\actualizar.php on line 17.
+ 1 APPPATH\Views\actualizar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(58): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:09:00 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: obtenerArtista/1]
+in APPPATH\Views\actualizar.php on line 23.
+ 1 APPPATH\Views\actualizar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(73): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:09:22 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: obtenerArtista/2]
+in APPPATH\Views\actualizar.php on line 23.
+ 1 APPPATH\Views\actualizar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(73): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:14:40 --> ErrorException: Undefined array key "image_art"
+[Method: GET, Route: obtenerArtista/3]
+in APPPATH\Views\actualizar.php on line 34.
+ 1 APPPATH\Views\actualizar.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image_art"', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(93): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:15:15 --> Error: Call to a member function isValid() on null
+[Method: POST, Route: crear]
+in APPPATH\Controllers\CrudArtista.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:16:03 --> Error: Call to a member function isValid() on null
+[Method: POST, Route: crear]
+in APPPATH\Controllers\CrudArtista.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 17:16:08 --> mysqli_sql_exception: Unknown column 'image_art' in 'field list' in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 17:16:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:16:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220568_e82730bfefdc643f67dd.jpeg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220568_e82730bfefdc643f67dd.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:16:08 --> [Caused by] mysqli_sql_exception: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220568_e82730bfefdc643f67dd.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220568_e82730bfefdc643f67dd.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220568_e82730bfefdc643f67dd.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 17:16:23 --> mysqli_sql_exception: Unknown column 'image_art' in 'field list' in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 17:16:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:16:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220583_a2380a122e83fd314ba4.jpeg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220583_a2380a122e83fd314ba4.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 17:16:23 --> [Caused by] mysqli_sql_exception: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220583_a2380a122e83fd314ba4.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220583_a2380a122e83fd314ba4.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asdas\', \'asdasd\', \'asd\', \'asdasd\', \'asdasd@gmail.com\', \'1737220583_a2380a122e83fd314ba4.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(50): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 18:47:54 --> Error: Class "App\Models\CrudArtistasModel" not found
+[Method: GET, Route: obras]
+in APPPATH\Controllers\CrudObra.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 18:48:31 --> Error: Class "App\Models\CrudArtistasModel" not found
+[Method: GET, Route: obras]
+in APPPATH\Controllers\CrudObra.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 18:59:53 --> mysqli_sql_exception: Unknown column 'image_art' in 'field list' in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 18:59:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 18:59:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'\', \'\', \'\', \'\', \'\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'\', \'\', \'\', \'\', \'\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 18:59:53 --> [Caused by] mysqli_sql_exception: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'\', \'\', \'\', \'\', \'\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'\', \'\', \'\', \'\', \'\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'\', \'\', \'\', \'\', \'\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 19:00:04 --> mysqli_sql_exception: Unknown column 'image_art' in 'field list' in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 19:00:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:00:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226804_496a59499cec17021c92.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226804_496a59499cec17021c92.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:00:04 --> [Caused by] mysqli_sql_exception: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226804_496a59499cec17021c92.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226804_496a59499cec17021c92.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226804_496a59499cec17021c92.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 19:01:52 --> mysqli_sql_exception: Unknown column 'image_art' in 'field list' in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 19:01:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:01:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226911_865cdd80601dadf2d1a3.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226911_865cdd80601dadf2d1a3.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:01:52 --> [Caused by] mysqli_sql_exception: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226911_865cdd80601dadf2d1a3.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226911_865cdd80601dadf2d1a3.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737226911_865cdd80601dadf2d1a3.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 19:04:28 --> mysqli_sql_exception: Unknown column 'image_art' in 'field list' in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 19:04:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:04:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737227068_1b671bb34f77aa5c16b9.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737227068_1b671bb34f77aa5c16b9.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:04:28 --> [Caused by] mysqli_sql_exception: Unknown column 'image_art' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737227068_1b671bb34f77aa5c16b9.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737227068_1b671bb34f77aa5c16b9.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (\'asasd\', \'asdas\', \'asd\', \'asd\', \'asdasd@gmail.com\', \'1737227068_1b671bb34f77aa5c16b9.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:06:47 --> ErrorException: Undefined array key "image_art"
+[Method: GET, Route: obtenerArtista/1]
+in APPPATH\Views\actualizar.php on line 32.
+ 1 APPPATH\Views\actualizar.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image_art"', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizar', [], true)
+ 5 APPPATH\Controllers\CrudArtista.php(112): view('actualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->obtenerArtista('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 19:27:48 --> mysqli_sql_exception: Column 'name_art' cannot be null in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 19:27:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name_art' cannot be null
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:27:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name_art' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:27:48 --> [Caused by] mysqli_sql_exception: Column 'name_art' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-18 19:31:07 --> mysqli_sql_exception: Column 'name_art' cannot be null in C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\galeryart\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\galeryart\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\galeryart\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\galeryart\app\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\galeryart\app\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar(Array)
+#6 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+#7 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+#8 C:\xampp\htdocs\galeryart\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\galeryart\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\galeryart\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\galeryart\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-01-18 19:31:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name_art' cannot be null
+[Method: POST, Route: crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 2 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:31:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name_art' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 4 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:31:07 --> [Caused by] mysqli_sql_exception: Column 'name_art' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_artistas` (`name_art`, `lastname_art`, `description_art`, `nationality_art`, `email_art`, `image_art`) VALUES (:name_art:, :lastname_art:, :description_art:, :nationality_art:, :email_art:, :image_art:)', [...], false)
+ 5 APPPATH\Models\CrudArtistaModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CrudArtista.php(65): App\Models\CrudArtistaModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudArtista->crear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudArtista))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:38:12 --> BadMethodCallException: Call to undefined method App\Models\CrudObrasModel::obtenerObra
+[Method: GET, Route: obtenerObra/2]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\CrudObra.php(105): CodeIgniter\Model->__call('obtenerObra', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:40:43 --> BadMethodCallException: Call to undefined method App\Models\CrudObrasModel::obtenerObra
+[Method: GET, Route: obtenerObra/2]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\CrudObra.php(105): CodeIgniter\Model->__call('obtenerObra', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:43:03 --> BadMethodCallException: Call to undefined method App\Models\CrudObrasModel::obtenerObra
+[Method: GET, Route: obtenerObra/2]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\CrudObra.php(105): CodeIgniter\Model->__call('obtenerObra', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:44:30 --> BadMethodCallException: Call to undefined method App\Models\CrudObrasModel::obtenerObra
+[Method: GET, Route: obtenerObra/2]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\CrudObra.php(105): CodeIgniter\Model->__call('obtenerObra', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:49:35 --> BadMethodCallException: Call to undefined method App\Models\CrudObrasModel::obtenerObra
+[Method: GET, Route: obtenerObra/3]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\CrudObra.php(105): CodeIgniter\Model->__call('obtenerObra', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('3')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:57:20 --> BadMethodCallException: Call to undefined method App\Models\CrudObrasModel::obtenerObra
+[Method: GET, Route: obtenerObra/2]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\CrudObra.php(105): CodeIgniter\Model->__call('obtenerObra', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 19:59:08 --> ErrorException: Undefined array key "name_art"
+[Method: GET, Route: obtenerObra/2]
+in APPPATH\Views\actualizarobras.php on line 10.
+ 1 APPPATH\Views\actualizarobras.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_art"', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizarobras', [], true)
+ 5 APPPATH\Controllers\CrudObra.php(108): view('actualizarobras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 20:45:18 --> ErrorException: Undefined array key "name_art"
+[Method: GET, Route: obtenerObra/2]
+in APPPATH\Views\actualizarobras.php on line 10.
+ 1 APPPATH\Views\actualizarobras.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_art"', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizarobras', [], true)
+ 5 APPPATH\Controllers\CrudObra.php(108): view('actualizarobras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 20:45:45 --> ErrorException: Undefined array key "name_art"
+[Method: GET, Route: obtenerObra/2]
+in APPPATH\Views\actualizarobras.php on line 10.
+ 1 APPPATH\Views\actualizarobras.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_art"', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizarobras', [], true)
+ 5 APPPATH\Controllers\CrudObra.php(108): view('actualizarobras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-18 20:46:49 --> ErrorException: Undefined array key "name_art"
+[Method: GET, Route: obtenerObra/2]
+in APPPATH\Views\actualizarobras.php on line 10.
+ 1 APPPATH\Views\actualizarobras.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name_art"', 'C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\galeryart\\app\\Views\\actualizarobras.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actualizarobras', [], true)
+ 5 APPPATH\Controllers\CrudObra.php(108): view('actualizarobras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CrudObra->obtenerObra('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudObra))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
