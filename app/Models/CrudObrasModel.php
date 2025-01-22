@@ -25,15 +25,15 @@ class CrudObrasModel extends Model
 
     protected $validationMessages = [
         'name_obra' => [
-            'required' => 'El nombre de la obra es obligatorio'
+            'required' => 'Work name is required'
         ],
         'id_art' => [
-            'required' => 'El ID del artista es requerido',
-            'is_not_unique' => 'El artista no existe'
+            'required' => 'Id artist is required',
+            'is_not_unique' => 'This artist not exist'
         ]
     ];
 
-    // Función para obtener obras con información del artista
+    
     public function getObrasConArtista()
     {
         return $this->select('t_obras.*, t_artistas.name_art')
@@ -49,13 +49,13 @@ class CrudObrasModel extends Model
         return $Obras->get()->getResultArray();
     }
 
-    // Función para obtener obras de un artista específico
+    
     public function getObrasPorArtista($id_art)
     {
         return $this->where('id_art', $id_art)->findAll();
     }
 
-    // Función para obtener una obra por ID
+    
     public function getObraById($id)
     {
         return $this->select('t_obras.*, t_artistas.name_art')
@@ -64,19 +64,19 @@ class CrudObrasModel extends Model
                     ->first();
     }
 
-    // Función para insertar una nueva obra
+    
     public function insertar($datos)
     {
         return $this->insert($datos);
     }
 
-    // Función para actualizar una obra
+    
     public function actualizar($id, $datos)
     {
         return $this->update($id, $datos);
     }
 
-    // Función para eliminar una obra
+    
     public function eliminar($id)
     {
         return $this->delete($id);

@@ -14,7 +14,7 @@ class CrudObra extends BaseController
 
         $data = [
             'datos' => $modelObras->getObrasConArtista(),
-            'artistas' => $modelArtistas->findAll(), // Para el select de artistas
+            'artistas' => $modelArtistas->findAll(), 
             'totalObras' => $modelObras->countAll()
         ];
 
@@ -23,7 +23,7 @@ class CrudObra extends BaseController
 
     public function crear()
     {
-        // Crear el directorio de uploads si no existe
+        
         $uploadPath = WRITEPATH . 'uploads/';
         if (!is_dir($uploadPath)) {
             mkdir($uploadPath, 0777, true);
@@ -37,19 +37,19 @@ class CrudObra extends BaseController
             try {
                 $fileName = $file->getRandomName();
                 $file->move($uploadPath, $fileName);
-                // Agregar este debug
+                
                 var_dump($fileName);
                 var_dump(file_exists($uploadPath . $fileName));
-                // exit(); // Descomenta para ver el debug
+                
             } catch (\Exception $e) {
-                return redirect()->to('/')->with('mensaje', 'Error al subir la imagen: ' . $e->getMessage());
+                return redirect()->to('/')->with('mensaje', 'Error at upload image: ' . $e->getMessage());
             }
         }
 
         $datos = [
-            "name_obra" => $this->request->getPost('name_obra'), // Corregido de name_art
+            "name_obra" => $this->request->getPost('name_obra'), 
             "description_obra" => $this->request->getPost('description_obra'),
-            "id_art" => $this->request->getPost('id_art'), // Agregar este campo
+            "id_art" => $this->request->getPost('id_art'), 
             "price_obra" => $this->request->getPost('price_obra'),
             "date_creation_obra" => $this->request->getPost('date_creation_obra'),
             "image_obra" => $fileName
@@ -59,13 +59,13 @@ class CrudObra extends BaseController
         
         try {
             $model->insertar($datos);
-            return redirect()->to('/obras')->with('mensaje', 'Obra guardado exitosamente!');
+            return redirect()->to('/obras')->with('mensaje', 'Work saved successfully!');
         } catch (\Exception $e) {
-            // Si hay error al guardar y se subió una imagen, eliminarla
+            
             if ($fileName && file_exists($uploadPath . $fileName)) {
                 unlink($uploadPath . $fileName);
             }
-            return redirect()->to('/')->with('mensaje', 'Error al guardar: ' . $e->getMessage());
+            return redirect()->to('/')->with('mensaje', 'Error at save: ' . $e->getMessage());
         }
     }
 
@@ -86,7 +86,7 @@ class CrudObra extends BaseController
             "price_obra" => $this->request->getPost('price_obra'),
             "date_creation_obra" => $this->request->getPost('date_creation_obra'),
             "image_obra" => $fileName,
-            "id_art" => $this->request->getPost('id_art') // Aquí se asigna el artista seleccionado
+            "id_art" => $this->request->getPost('id_art') 
         ];
         $id_obra = $this->request->getPost('id_obra');
 
@@ -94,7 +94,7 @@ class CrudObra extends BaseController
         
         try {
             $model->update($id_obra, $datos);
-            return redirect()->to('/obras')->with('mensaje', '¡Registro actualizado exitosamente!');
+            return redirect()->to('/obras')->with('mensaje', '¡Work updated successfully!');
         } catch (\Exception $e) {
             return redirect()->to('/obras')->with('mensaje', 'Error: ' . $e->getMessage());
         }
@@ -105,26 +105,26 @@ class CrudObra extends BaseController
         $CrudObra = new CrudObrasModel();
         $CrudArtista = new CrudArtistaModel();
 
-        // Obtener datos de la obra
+        
         $data = ["id_obra" => $id_obra];
         $respuesta = $CrudObra->obtenerObra($data);
 
-        // Verifica que la obra exista
+        
         if (!$respuesta) {
-            return redirect()->to('/obras')->with('mensaje', 'Obra no encontrada.');
+            return redirect()->to('/obras')->with('mensaje', 'Work not founded.');
         }
 
-        // Obtener el ID del artista asociado a la obra
+        
         $selectedArtistId = $respuesta['id_art'] ?? null;
 
-        // Obtener la lista de artistas
+        
         $artistas = $CrudArtista->findAll();
 
-        // Pasar datos a la vista
+        
         $datos = [
-            'datos' => $respuesta, // Datos de la obra
-            'artistas' => $artistas, // Lista de artistas
-            'selectedArtistId' => $selectedArtistId, // Artista seleccionado
+            'datos' => $respuesta, 
+            'artistas' => $artistas, 
+            'selectedArtistId' => $selectedArtistId, 
         ];
 
         return view('actualizarobras', $datos);
@@ -138,7 +138,7 @@ class CrudObra extends BaseController
         
         try {
             $model->eliminar($id_obra);
-            return redirect()->to('/obras')->with('mensaje', '¡Registro eliminado exitosamente!');
+            return redirect()->to('/obras')->with('mensaje', 'Work deleted successfully!');
         } catch (\Exception $e) {
             return redirect()->to('/obras')->with('mensaje', 'Error: ' . $e->getMessage());
         }

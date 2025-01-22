@@ -12,13 +12,13 @@ class CrudArtista extends BaseController
 
         $crudArtista = new CrudArtistaModel();
         $datos = $crudArtista->listarArtistas();
-        $totalArtistas = $crudArtista->contarArtistas(); // Obtener el total de artistas
-        //guarda el mensaje que se haya generado a traves de la redireccion
+        $totalArtistas = $crudArtista->contarArtistas(); 
+        
 
         $mensaje = session('mensaje');
         $data = [
             "datos" => $datos,
-            "totalArtistas" => $totalArtistas, // Pasar el total de artistas a la vista
+            "totalArtistas" => $totalArtistas, 
             "mensaje" => $mensaje
         ];
         return view('listado', $data);
@@ -27,7 +27,7 @@ class CrudArtista extends BaseController
 
     public function crear()
     {
-        // Crear el directorio de uploads si no existe
+        
         $uploadPath = WRITEPATH . 'uploads/';
         if (!is_dir($uploadPath)) {
             mkdir($uploadPath, 0777, true);
@@ -36,17 +36,17 @@ class CrudArtista extends BaseController
         $file = $this->request->getFile('image_art');
         $fileName = null;
 
-        // Verificar si se subió un archivo
+        
         if ($file && $file->isValid() && !$file->hasMoved()) {
             try {
                 $fileName = $file->getRandomName();
                 $file->move($uploadPath, $fileName);
-                // Agregar este debug
+                
                 var_dump($fileName);
                 var_dump(file_exists($uploadPath . $fileName));
-                // exit(); // Descomenta para ver el debug
+                
             } catch (\Exception $e) {
-                return redirect()->to('/')->with('mensaje', 'Error al subir la imagen: ' . $e->getMessage());
+                return redirect()->to('/')->with('mensaje', 'Error at upload the image: ' . $e->getMessage());
             }
         }
 
@@ -63,13 +63,13 @@ class CrudArtista extends BaseController
         
         try {
             $model->insertar($datos);
-            return redirect()->to('/')->with('mensaje', '¡Registro guardado exitosamente!');
+            return redirect()->to('/')->with('mensaje', 'Artist saved successfully!');
         } catch (\Exception $e) {
             // Si hay error al guardar y se subió una imagen, eliminarla
             if ($fileName && file_exists($uploadPath . $fileName)) {
                 unlink($uploadPath . $fileName);
             }
-            return redirect()->to('/')->with('mensaje', 'Error al guardar: ' . $e->getMessage());
+            return redirect()->to('/')->with('mensaje', 'Error at save: ' . $e->getMessage());
         }
     }
 
@@ -97,7 +97,7 @@ class CrudArtista extends BaseController
         
         try {
             $model->update($id_art, $datos);
-            return redirect()->to('/')->with('mensaje', '¡Registro actualizado exitosamente!');
+            return redirect()->to('/')->with('mensaje', 'Artist updated successfully!');
         } catch (\Exception $e) {
             return redirect()->to('/')->with('mensaje', 'Error: ' . $e->getMessage());
         }
@@ -109,7 +109,7 @@ class CrudArtista extends BaseController
         $respuesta = $CrudArtista->obtenerArtista($data);
 
         $datos = ["datos" => $respuesta];
-        return view('actualizar', $datos); // Cambiar $data a $datos
+        return view('actualizar', $datos);
     }
 
     public function eliminar($id_art)
@@ -118,7 +118,7 @@ class CrudArtista extends BaseController
         
         try {
             $model->eliminar($id_art);
-            return redirect()->to('/')->with('mensaje', '¡Registro eliminado exitosamente!');
+            return redirect()->to('/')->with('mensaje', '¡Artist deleted successfully!');
         } catch (\Exception $e) {
             return redirect()->to('/')->with('mensaje', 'Error: ' . $e->getMessage());
         }

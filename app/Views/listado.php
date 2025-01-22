@@ -1,61 +1,72 @@
 <?= view('header') ?>
 
+<style>
+    .custom-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+</style>
 <div class="container">
-    <h1 class="text-center mt-5">Artistas</h1>
+    <h1 class="text-center mt-5">Artists</h1>
     <div class="row">
         <div class="col-sm-12" style="background-color: cadetblue; padding: 20px">
             <form method="POST" action="<?= site_url('crear') ?>" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col">
 
-                        <b><label for="name_art">Nombre:</label></b>
-                        <input type="text" name="name_art" id="name_art" class="form-control">
+                        <b><label for="name_art">Name:</label></b>
+                        <input type="text" name="name_art" id="name_art" class="form-control" required>
                     </div>
                     <div class="col">
-                        <b><label for="lastname_art">Apellido</label></b>
-                        <input type="text" name="lastname_art" id="lastname_art" class="form-control">
+                        <b><label for="lastname_art">Lastname:</label></b>
+                        <input type="text" name="lastname_art" id="lastname_art" class="form-control" required>
                     </div>
                     <div class="col">
-                        <b><label for="nationality_art">Nacionalidad</label></b>
-                        <input type="text" name="nationality_art" id="nationality_art" class="form-control">
+                        <b><label for="nationality_art">Nationality:</label></b>
+                        <input type="text" name="nationality_art" id="nationality_art" class="form-control" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <b><label for="description_art">Descripción</label></b>
-                        <input type="text" name="description_art" id="description_art" class="form-control">
+                        <b><label for="description_art">Description:</label></b>
+                        <input type="text" name="description_art" id="description_art" class="form-control" required>
                     </div>
                     <div class="col">
-                        <b><label for="email_art">Email</label></b>
-                        <input type="email" name="email_art" id="email_art" class="form-control">
+                        <b><label for="email_art">Email:</label></b>
+                        <input type="email" name="email_art" id="email_art" class="form-control" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <b><label for="image_art">Imagen</label></b>
-                        <input type="file" name="image_art" id="image_art" class="form-control">
+                        <b><label for="image_art">Image:</label></b>
+                        <div class="custom-file">
+                            <label for="image_art" id="customLabel" class="form-label">Select an image</label>
+                            <input type="file" name="image_art" id="image_art" class="form-control" style="display: none;" required>
+                            <button type="button" class="btn btn-primary" id="customButton"><i class="bi bi-image"></i> Select image</button>
+                        </div>
                     </div>
                 </div>
                 <br>
-                <button class="btn btn-success">Guardar</button>
+                <button class="btn btn-success">Save</button>
             </form>
         </div>
     </div>
     <hr>
-    <h2 class="text-center">Listado de Artistas</h2>
-    <p class="text-left">Total de Artistas: <?= $totalArtistas ?></p> <!-- Mostrar el total de artistas -->
+    <h2 class="text-center">List of Artists</h2>
+    <p class="text-left">Total Artists: <?= $totalArtistas ?></p> 
     <div class="row">
         <div class="col-sm-12">
             <div class="table table-responsive">
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Descripción</th>
-                            <th>Nacionalidad</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Lastname</th>
+                            <th>Description</th>
+                            <th>Nationality</th>
                             <th>Email</th>
                         </tr>
                     </thead>
@@ -86,7 +97,7 @@
                             <?php endforeach; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="8" class="text-center">No hay datos disponibles</td>
+                                <td colspan="8" class="text-center">Don't exist any artist</td>
                             </tr>
                         <?php endif; ?>
                     </tbody>
@@ -109,11 +120,23 @@
     <?php if (session()->getFlashdata('mensaje')): ?>
         Swal.fire({
             icon: 'success',
-            title: '¡Éxito!',
+            title: '¡Success!',
             text: '<?= session()->getFlashdata('mensaje') ?>',
-            confirmButtonText: 'Aceptar'
+            confirmButtonText: 'Acept'
         });
     <?php endif; ?>
+</script>
+
+<script>
+    document.getElementById('customButton').addEventListener('click', function () {
+    document.getElementById('image_art').click();
+});
+
+document.getElementById('image_art').addEventListener('change', function () {
+    const fileName = this.files[0] ? this.files[0].name : "Select a file";
+    document.getElementById('customLabel').textContent = fileName;
+});
+
 </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
