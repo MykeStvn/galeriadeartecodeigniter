@@ -1,7 +1,7 @@
 <?= view('header') ?>
 
 <div class="container">
-    <h1 class="text-center mt-5">Obras</h1>
+    <h1 class="text-center mt-5">Artistic Work</h1>
     <div class="row">
         <div class="col-sm-12" style="background-color: cadetblue; padding: 20px">
             <form method="POST" action="<?= site_url('crear-obra') ?>" enctype="multipart/form-data">
